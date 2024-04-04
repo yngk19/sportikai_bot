@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  bot:
+    build: . 
+    command: python3 src/main.py
+    env_file: 
+      - ./.env
+    restart: always
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+    volumes: 
+      - pgdata:/var/lib/postgresql/data 
+    restart: on-failure
+    environment:
+      - POSTGRES_DB
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+  redis:
+    image: redis:7-alpine
+    restart: always
+    ports:
+      - "6378:6378"
+    expose:
+      - "6378"
+    volumes: 
+      - cache:/data
+
+volumes:
+  pgdata:
+  cache:
+    driver: local
+
