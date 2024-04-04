@@ -73,19 +73,13 @@ WORKOUT_GOAL = '''
 '''
 
 # Buttons
-BTN_AGREEMENT_YES = '''
-Даю согласие👌
-'''
+BTN_AGREEMENT_YES = 'Даю согласие👌'
 CALLBACK_BTN_AGREEMENT_YES = 'btn_agreement_yes'
-BTN_AGREEMENT_NO = '''
-Нет🙅‍♂️
-'''
+BTN_AGREEMENT_NO = 'Нет🙅‍♂️'
 CALLBACK_BTN_AGREEMENT_NO = 'btn_agreement_no'
 
 ###############
-BTN_BACK_TO_MENU = '''
-Назад↩
-'''
+BTN_BACK_TO_MENU = 'Назад↩'
 CALLBACK_BTN_BACK_TO_MENU = 'btn_back_to_menu'
 
 ###############
@@ -96,144 +90,89 @@ BTN_FOOD_ADVICES = 'Рекомендации по питанию🍴'
 CALLBACK_BTN_FOOD_ADVICES = 'btn_food_advices'
 
 ###############
-BTN_TRAINING_PROGRAMS = '''
-Составить программу тренировок🏋
-'''
+BTN_TRAINING_PROGRAMS = 'Составить программу тренировок🏋'
 CALLBACK_BTN_TRAINING_PROGRAMS = 'btn_training_programs'
 
 ###############
-BTN_CALORIFIC_CALCULATOR = '''
-Калькулятор калорий🍲
-'''
+BTN_CALORIFIC_CALCULATOR = 'Калькулятор калорий🍲'
 CALLBACK_BTN_CALORIFIC_CALCULATOR = 'btn_calorific_calculator'
 
 ###############
-BTN_EXERCISES_GUIDES = '''
-Гайд по упражнениям📔
-'''
+BTN_EXERCISES_GUIDES = 'Гайд по упражнениям📔'
 CALLBACK_BTN_EXERCISES_GUIDES = 'btn_exercises_guides'
 
 ###############
-BTN_BODY_PARAMETERS = '''
-Мои параметры🧍
-'''
+BTN_BODY_PARAMETERS = 'Мои параметры🧍'
 CALLBACK_BTN_BODY_PARAMETERS = 'btn_body_parameters'
 
 ###############
-BTN_HELP = '''
-Помощь❓
-'''
+BTN_HELP = 'Помощь❓'
 CALLBACK_BTN_HELP = 'btn_help'
 
 ###############
 
-'''
-  1. Информацию о продукте
-  2. Калорийность продукта
-  3. Составить план питания
-  4. Примеры рецептов 
-  5. Здоровый заменитель вредному продукту
-'''
-BTN_BACK_TO_FOOD_ADVICES = '''
-Назад↩
-'''
+BTN_BACK_TO_FOOD_ADVICES = 'Назад↩'
 CALLBACK_BTN_BACK_TO_FOOD_ADVICES = 'btn_back_to_food_advices'
 
-BTN_FOOD_CALORIES = '''
-Калорийность продукта🥞
-'''
+BTN_FOOD_CALORIES = 'Калорийность продукта🥞'
 CALLBACK_BTN_FOOD_CALORIES = 'btn_food_calories'
 
-BTN_FOOD_PLAN = '''
-Составить план питания🗓
-'''
+BTN_FOOD_PLAN = 'Составить план питания🗓'
 CALLBACK_BTN_FOOD_PLAN = 'btn_food_plan'
 
-BTN_RECIPES = '''
-Примеры рецептов🗒
-'''
+BTN_RECIPES = 'Примеры рецептов🗒'
 CALLBACK_BTN_RECIPES = 'btn_recipes'
 
 
 ##########
-BTN_BACK_TO_GOAL = '''
-Назад↩
-'''
+BTN_BACK_TO_GOAL = 'Назад↩'
 CALLBACK_BTN_BACK_TO_GOAL = 'btn_back_to_goal'
 
-BTN_LOSE_WEIGHT = '''
-Хочу похудеть
-'''
+BTN_LOSE_WEIGHT = 'Хочу похудеть'
 CALLBACK_BTN_LOSE_WEIGHT = 'btn_goal_lose_weight'
 
-BTN_MUSCULAR_WEIGHT = '''
-Набрать мышечную массу
-'''
+BTN_MUSCULAR_WEIGHT = 'Набрать мышечную массу'
 CALLBACK_BTN_MUSCULAR_WEIGHT = 'btn_goal_muscular_weight'
 
-BTN_MAINTAIN_FIT = '''
-Поддерживать форму
-'''
+BTN_MAINTAIN_FIT = 'Поддерживать форму'
 CALLBACK_BTN_MAINTAIN_FIT = 'btn_goal_maintain_fit'
 
 
 ################
-BTN_BACK_TO_ACTIVITY_LEVEL = '''
-Назад↩
-'''
+BTN_BACK_TO_ACTIVITY_LEVEL = 'Назад↩'
 CALLBACK_BTN_BACK_TO_ACTIVITY_LEVEL = 'btn_back_to_activity_level'
 
 
 ################
-BTN_BACK_TO_PREFERENCIES = '''
-Назад↩
-'''
+BTN_BACK_TO_PREFERENCIES = 'Назад↩'
 CALLBACK_BTN_BACK_TO_PREFERENCIES = 'btn_back_to_preferencies'
 
-BTN_BACK_TO_FOOD_NAME = '''
-Назад↩
-'''
+BTN_BACK_TO_FOOD_NAME = 'Назад↩'
 CALLBACK_BTN_BACK_TO_FOOD_NAME ='btn_back_to_food_name'
 
 ################
-BTN_BACK_TO_ANKET = '''
-Назад↩
-'''
+BTN_BACK_TO_ANKET = 'Назад↩'
 CALLBACK_BTN_BACK_TO_ANKET = 'btn_back_to_anket'
 
-BTN_AGE = '''
-Возраст
-'''
+BTN_AGE = 'Возраст'
 CALLBACK_BTN_AGE = 'btn_age'
 
-BTN_GENDER = '''
-Пол
-'''
+BTN_GENDER = 'Пол'
 CALLBACK_BTN_GENDER = 'btn_gender'
 
-BTN_GROWTH = '''
-Рост
-'''
+BTN_GROWTH = 'Рост'
 CALLBACK_BTN_GROWTH = 'btn_growth'
 
-BTN_WEIGHT = '''
-Вес
-'''
+BTN_WEIGHT = 'Вес'
 CALLBACK_BTN_WEIGHT = 'btn_weight'
 
 
 ###########
-BTN_WORKOUT_LOSE_WEIGHT = '''
-Хочу похудеть
-'''
+BTN_WORKOUT_LOSE_WEIGHT = 'Хочу похудеть'
 CALLBACK_BTN_WORKOUT_LOSE_WEIGHT = 'btn_workout_lose_weight'
 
-BTN_WORKOUT_MUSCULAR_WEIGHT = '''
-Набрать мышечную массу
-'''
+BTN_WORKOUT_MUSCULAR_WEIGHT = 'Набрать мышечную массу'
 CALLBACK_BTN_WORKOUT_MUSCULAR_WEIGHT = 'btn_workout_muscular_weight'
 
-BTN_WORKOUT_MAINTAIN_FIT = '''
-Поддерживать форму
-'''
+BTN_WORKOUT_MAINTAIN_FIT = 'Поддерживать форму'
 CALLBACK_BTN_WORKOUT_MAINTAIN_FIT = 'btn_workout_maintain_fit'
