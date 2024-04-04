@@ -91,9 +91,8 @@ CALLBACK_BTN_BACK_TO_MENU = 'btn_back_to_menu'
 ###############
 
 ###############
-BTN_FOOD_ADVICES = '''
-Рекомендации по питанию🍴
-'''
+BTN_FOOD_ADVICES = 'Рекомендации по питанию🍴'
+
 CALLBACK_BTN_FOOD_ADVICES = 'btn_food_advices'
 
 ###############
