@@ -9,13 +9,16 @@ from aiogram.fsm.context import FSMContext
 from utils import constants
 from keyboards import keyboards
 from config import config
+from handlers.admin import users
+from handlers.admin import startpress
 
 
 router = Router()  
 
 @router.message(Command("start"))
-async def StartCommand(message: Message, state: FSMContext):
+async def StartCommand(message: Message, state: FSMContext): 
   userData = await state.get_data()
+  startpress.append(1)
   try:
     agreement = userData['agreement']
     if not agreement:
@@ -60,6 +63,7 @@ async def AgreementCheck(callback: CallbackQuery, state: FSMContext):
   await state.update_data(freetime='')
   await state.update_data(exercise_preferencies='')
   await state.update_data(goal='')
+  users.append([callback.message.chat.username, callback.message.chat.first_name])
   await StartCommand(callback.message, state)
 
 @router.callback_query(F.data == constants.CALLBACK_BTN_AGREEMENT_NO)

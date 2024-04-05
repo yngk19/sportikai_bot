@@ -9,7 +9,7 @@ from keyboards import keyboards
 from config import config
 from fsm import states
 from utils.gemini import GetPlan
-
+from handlers.admin import caloriescalculatorget
 
 router = Router()  
 
@@ -99,6 +99,7 @@ async def WaitForCalories(message: Message, state: FSMContext):
 	await Calories(message, state)
 
 async def Calories(message: Message, state: FSMContext):
+	caloriescalculatorget.append(1)
 	userData = await state.get_data()
 	age = userData['age']
 	gender = userData['gender']

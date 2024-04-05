@@ -13,6 +13,8 @@ if ENV == "local":
 else:
 	MEDIA_PATH: str = env.str("MEDIA_PROD")
 
+BOT_ADMIN_TGID: str = env.str("BOT_ADMIN_TGID")
+
 PG_HOST: str = env.str("POSTGRES_HOST")
 PG_USER: str = env.str("POSTGRES_USER")
 PG_PASSWORD: str = env.str("POSTGRES_PASSWORD")

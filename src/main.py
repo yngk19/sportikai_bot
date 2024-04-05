@@ -12,7 +12,7 @@ import redis.asyncio as redis
 
 from config import config
 from utils.setupcommands import SetupCommands
-from handlers import start, foodadvices, ration, recipes, foodcalories, myparameters, caloriescalculator, workoutprogram
+from handlers import start, foodadvices, ration, recipes, foodcalories, myparameters, caloriescalculator, workoutprogram, admin
 
 
 if config.USE_CACHE:
@@ -35,6 +35,7 @@ async def main() -> None:
     dp.include_router(myparameters.router)
     dp.include_router(caloriescalculator.router)
     dp.include_router(workoutprogram.router)
+    dp.include_router(admin.router)
     await dp.start_polling(bot)
 
 

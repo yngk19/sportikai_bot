@@ -11,7 +11,7 @@ from keyboards import keyboards
 from config import config
 from fsm import states
 from utils.gemini import GetPlan
-
+from handlers.admin import rationplanget
 
 router = Router()  
 
@@ -106,6 +106,7 @@ async def WaitForResult(message: Message, state: FSMContext):
   await RationPlanResult(message, state)
 
 async def RationPlanResult(message: Message, state: FSMContext):
+  rationplanget.append(1)
   userData = await state.get_data()
   goal = userData['goal']
   activityLevel = userData['activity_level']

@@ -9,6 +9,7 @@ from keyboards import keyboards
 from config import config
 from fsm import states
 from utils.gemini import GetPlan
+from handlers.admin import ankentget
 
 
 router = Router()  
@@ -20,6 +21,7 @@ async def Parameters(callback: CallbackQuery, state: FSMContext):
 	await UserInfo(callback.message, state)
 
 async def UserInfo(message: Message, state: FSMContext):
+	await state.set_state(state=None)
 	userData = await state.get_data()
 	age = userData['age']
 	if age == '':
@@ -67,6 +69,7 @@ async def AgeCallback(callback: CallbackQuery, state: FSMContext):
 @router.message(StateFilter(states.Anket.Age))
 async def Age(message: Message, state: FSMContext):
 	await state.update_data(age=message.text)
+	ankentget.append(1)
 	await UserInfo(message, state)
 
 @router.callback_query(F.data == constants.CALLBACK_BTN_GENDER)
@@ -81,6 +84,7 @@ async def GenderCallback(callback: CallbackQuery, state: FSMContext):
 @router.message(StateFilter(states.Anket.Gender))
 async def Gender(message: Message, state: FSMContext):
 	await state.update_data(gender=message.text)
+	ankentget.append(1)
 	await UserInfo(message, state)
 
 @router.callback_query(F.data == constants.CALLBACK_BTN_GROWTH)
@@ -95,6 +99,7 @@ async def GrowthCallback(callback: CallbackQuery, state: FSMContext):
 @router.message(StateFilter(states.Anket.Growth))
 async def Growth(message: Message, state: FSMContext):
 	await state.update_data(growth=message.text)
+	ankentget.append(1)
 	await UserInfo(message, state)
 
 @router.callback_query(F.data == constants.CALLBACK_BTN_WEIGHT)

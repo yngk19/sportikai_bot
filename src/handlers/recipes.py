@@ -9,7 +9,7 @@ from keyboards import keyboards
 from config import config
 from fsm import states
 from utils.gemini import GetPlan
-
+from handlers.admin import recipesget
 
 router = Router()  
 
@@ -25,7 +25,7 @@ async def WaitForRecipes(callback: CallbackQuery, state: FSMContext):
 	await Recipes(callback, state)
 
 async def Recipes(callback: CallbackQuery, state: FSMContext):
-	#await callback.message.delete()
+	recipesget.append(1)
 	prompt = f'''
   	Дай мне примеры рецептов здоровых блюд вместе с их калорийностью.
   	'''
